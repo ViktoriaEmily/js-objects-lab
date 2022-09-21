@@ -2,8 +2,8 @@
     owner: "Joe Bloggs",
     address : '3 Walkers Lane',
     previous_owners: [
-      "Pat Smith - 1 Main Street",
-      "Sheila Dwyer - 2 High Street"
+      { name: "Pat Smith", address: "1 Main Street" },
+      { name: "Sheila Dwyer", address: "2 High Street" }
     ],
     type: {
       make: "Toyota",
@@ -40,7 +40,7 @@
       aCar.color.interior.texture +
       " interior."
   );
-  console.log('First owner : ' + aCar.previous_owners[0] )
+  //console.log('First owner : ' + aCar.previous_owners[0] )
   console.log(
     "First owner: " +
       aCar.previous_owners[0].name +
